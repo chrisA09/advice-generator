@@ -2,6 +2,7 @@ import './App.css';
 import Header from './Header';
 import Quote from './Quote';
 import Button from './Button';
+import GetQuote from './GetQuote';
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
           <Header/>
           <Quote/>
           <Button/>
+          <GetQuote/>
     </div>
   );
 }
-
 export default App;
