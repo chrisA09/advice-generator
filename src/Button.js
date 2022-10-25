@@ -1,9 +1,9 @@
 import React from 'react'
 import Dice from './Dice'
 
-export default function Button() {
+export default function Button({loadQuote}) {
   return (
-    <div>
+    <div onClick= {loadQuote}>
         <Dice />
     </div>
   )
