@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect,useState } from 'react';
 import Button from './Button';
 
-export default function GetQuote() {
+export default function Quote() {
   // fetching
   /*
   el fetching, que es como obtengo la data, se lo puede hacer en app.js y hacer bajar la data para donde la necesite.
