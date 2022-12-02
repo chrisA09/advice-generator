@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export default function Header() {
-    let numero = 0
-  
+export default function Header({ id }) {
   return (
     <div>
-        <h2>advice #{numero}</h2>
+      <h2>advice #{id}</h2>
     </div>
-  )
+  );
 }

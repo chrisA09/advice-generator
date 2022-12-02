@@ -1,10 +1,10 @@
-import React from 'react'
-import Icon from './Icon'
+import React from "react";
+import Icon from "./Icon";
 
-export default function Button({loadQuote}) {
+export default function Button({ loadQuote, isLoading }) {
   return (
-    <button onClick={loadQuote}>
+    <button disabled={isLoading} onClick={loadQuote}>
       <Icon />
     </button>
-  )
+  );
 }

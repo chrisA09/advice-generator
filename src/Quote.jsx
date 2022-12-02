@@ -1,13 +1,18 @@
-import React from 'react'
-import { useEffect,useState } from 'react';
-import Button from './Button';
+import React from "react";
 
-export default function Quote() {
-  // fetching
-  /*
-  el fetching, que es como obtengo la data, se lo puede hacer en app.js y hacer bajar la data para donde la necesite.
+export default function Quote({ advice }) {
+  return (
+    <div>
+      <p> {advice} </p>
+    </div>
+  );
+}
+
+/*
+ // fetching
+   es como obtengo la data, se lo puede hacer en app.js y hacer bajar la data para donde la necesite.
   La id iria para header y advice iria para text o advice
-  */
+  
   function loadQuote(){
     fetch('	https://api.adviceslip.com/advice')
       .then((response) => response.json())
@@ -21,8 +26,8 @@ export default function Quote() {
  
   return (
     <div>
-      <h1> {advice.advice} </h1>{/*advice variable refers to whatever that is in that state*/}
+      <h1> {advice.advice} </h1>{advice variable refers to whatever that is in that state}
       <Button loadQuote = {loadQuote()}/>
     </div>
   )
-}
+*/
